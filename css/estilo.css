@@ -1,0 +1,567 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    width: 960px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-image: url("../images/frente2.jpg");*/
+    background-color: #ffffff;
+}
+#datos p {
+    font-size: 14px;
+}
+
+#marca img {
+    width: 220px;
+    height: 70px;
+    float:left;
+}
+
+#botonera_principal {
+    width: 400px;
+    height: 40px;
+    float:right;
+    margin-top: 20px;
+    margin-right: 20PX;
+}
+
+#botonera_principal ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+
+#botonera_principal ul li {
+    display: inline;
+}
+#botonera_principal ul li a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ffffff;
+    color:#000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#botonera_principal ul li a:active {
+    color: rgb(252, 5, 5);
+}
+
+#botonera_principal ul li a:visited {
+    color: rgb(0, 0, 0);
+}
+
+#botonera_principal ul li a:link {
+    color: rgb(47, 17, 155);
+}
+
+#botonera_principal ul li a:hover {
+    color: rgb(211, 3, 3);
+}
+
+#contenido_principal {
+    width: 960px;
+    height: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+
+
+#imagen1 {
+    width: 350px;
+    height: 300px;
+    float:left;
+    margin-top: 10px;
+    background-size: cover; 
+    
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:85%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+#presentacion {
+    width: 600px;
+    height: 300px;  
+    background-color: #e0dcdc;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+#titulo_principal {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+#contenido_articulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+    padding: 18px;
+}
+
+#texto_contenido {
+    width: 250px;
+    height: 300px;
+    background-color: rgb(156, 180, 224);
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+#contenido_segundo {
+    font-family: Helvetica;
+    font-size: 16px;
+}
+#imagen2 {
+    width: 440px;
+    height: 300px;
+    float:left; 
+    margin-bottom: 10px;
+    background-image: url(../images/frente2.jpg);
+    background-size: cover; 
+}
+
+#destacado {
+    width: 250px;
+    height: 300px;
+    background-color:  rgb(156, 180, 224);
+    float: right;
+    margin-bottom: px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#contenido_destacado{
+    font-family: Arial;
+    font-size: 20pxpx;
+}
+
+
+footer {
+    width: 960px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#datos {
+    width:500px;
+    float:left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#datos ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#redes {
+    width:350px;
+    height: 35px;
+    float:right;
+    padding: 15px;
+}
+#logoredes {
+    width: 50px;
+    height: 50px;
+    float:right;
+
+}
+
+/*PROPIO DE ACTIVIDADES*/
+
+#contenido_principal_actividades {
+    width: 960px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#lista_de_actividades {
+    width: 960px;
+    height: 150px;
+    }
+
+#tabla_actividades table{
+    width: 100%;
+    border-color: black;
+    
+    }
+
+#tabla tr, td{
+    width: 20%;
+    border: 1px solid;
+    padding: 0.3em;
+}
+
+#taller {
+    width: 320px;
+    height: 445px;
+    background-color: rgb(250, 246, 43);
+    float: left;
+}
+
+#imagen_taller img {
+    height: 315px;
+    object-fit: contain;
+}
+
+#descripción_taller {
+    padding: 15px;
+    padding-right: 20px;
+    margin: 0;
+
+
+}
+
+/* A partir de acá empezamos el media query */
+
+@media all and (min-width:600px) and (max-width:1023px){
+
+    header {
+        width: 580px;
+        height: 140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #datos p {
+        font-size: 8px;
+    }
+    
+    #marca img {
+        width: 300px;
+        height: 100px;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+  
+    #botonera_principal ul li a {
+        display: inline-block;
+        padding: 10px;
+        font-weight: bold;
+        text-decoration: none;
+    }   
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:100%;
+        position:relative;
+        height:0;
+    }
+    
+    .map-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+
+    #contenido_principal {
+        width: 580px;
+        height: 560px;
+    }
+
+    #imagen1 {
+        width: 200px;
+        height: 200px;
+        background-size: cover; 
+        background-position: center;
+    }
+    
+    #presentacion {
+        width: 370px;
+        height: 200px;
+        padding: 2px;
+    }
+    
+    #titulo_principal {
+        font-size: 15px;
+       
+    }
+    
+    #contenido_articulo {
+        font-size: 15px;
+        padding:10px;
+        padding-left: 15px;
+    }
+    
+    #texto_contenido {
+        width: 580px;
+        height: 100px;
+        padding: 10px;
+           }
+    
+    #contenido_segundo {
+        font-size: 14px;
+    }
+
+    #imagen2 {
+        width: 285px;
+        height: 200px;
+        background-size: cover; 
+    }
+    
+    #destacado {
+        padding: 20px;
+        height: 200px;
+        width: 280px;
+    }
+    
+    #contenido_destacado{
+        font-size: 15px;
+    }
+        
+    footer {
+        width: 580px;
+    }
+    
+    #datos {
+        width:250px;
+        font-size: 12px;
+
+    }
+    #redes {
+        width:250px;
+    }
+
+/*PROPIO DE ACTIVIDADES*/
+
+#contenido_principal_actividades {
+    width: 580px;
+    height: auto;
+}
+
+#lista_de_actividades {
+    width: 580px;
+    height: 240px;
+}
+
+#taller {
+    width: 290px;
+    height: 380px;
+    background-color: rgb(250, 246, 43);
+    float: left;
+}
+
+#imagen_taller img {
+    height: 285px;
+    object-fit: contain;
+}
+
+#descripción_taller {
+    padding: 15px;
+    padding-right: 20px;
+    margin: 0;
+    font-size: 12px;
+
+
+}
+
+
+} /*fin de media de una tableta*/
+
+@media all and (max-width: 599px) {
+
+    header {
+        width: 90%;
+        height: auto;
+
+    }
+    #datos p {
+        font-size: 10px;
+    }
+    
+    #marca img {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    #botonera_principal {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-top: 20px; /*?*/
+    }
+    
+    #botonera_principal ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        float: none;
+    }
+    
+    #botonera_principal ul li {
+        display: block;
+    }
+
+    #botonera_principal ul li a {
+        display: block;
+        width: 100%;
+        font-weight: bold;
+        text-decoration: none;
+        box-sizing: border-box;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+     
+    #contenido_principal {
+        width: 90%;
+        height: auto;
+    }
+
+    #imagen1 {
+        width: 100%;
+        height: 380px; 
+        float: none;
+        /*background-size: cover;*/
+    }
+    
+    #presentacion {
+        width: 100%;
+        height: auto; 
+        float: none;
+    }
+    
+   
+    #texto_contenido {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-right: 0;
+    }
+    
+    #imagen2 {
+        width: 100%;
+        height: 300px;
+        float: none; 
+        margin-bottom: 10px;
+        background-position: center; 
+    }
+    
+    #destacado {
+        width: 100%;
+        height: auto;
+        float: none;
+
+    }
+    
+    #contenido_destacado{
+        font-size: 90%;
+    }
+    
+   
+    
+    footer {
+        width: 90%;
+        height: auto;
+        float: none
+    }
+    
+    #datos {
+        width: 100%;
+        height: auto;
+        float: none;
+        font-size: 11px;
+
+    }
+    #redes {
+        width: 90%;
+        height: 50px;
+        float: none;
+    }
+
+/*PROPIO DE ACTIVIDADES*/
+
+
+#contenido_principal_actividades {
+    width: 550px;
+    height: auto;
+}
+
+#lista_de_actividades {
+    width: 550px;
+    height: 240px;
+}
+
+#taller {
+    width: 550PX;
+    height: 630px;
+    background-color: rgb(250, 246, 43);
+    
+}
+
+#imagen_taller img {
+    height: 550px;
+    object-fit: contain;
+}
+
+#descripción_taller {
+    padding: 15px;
+    padding-right: 20px;
+    margin: 0;
+    font-size: 14px;
+
+
+}
+
+
+ 
+footer {
+    width: 550PX;
+    height: auto;
+    float: none
+}
+
+#datos {
+    width: 100%;
+    height: auto;
+    float: none;
+    font-size: 15px;
+
+}
+#redes {
+    width: 90%;
+    height: 50px;
+    float: none;
+}
+}/*fin media movil*/
