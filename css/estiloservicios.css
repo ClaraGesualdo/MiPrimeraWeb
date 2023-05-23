@@ -1,0 +1,44 @@
+.anchoregular{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media all and (min-width:600px) and (max-width:1023px){
+    header {
+        width: 580px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .anchoregular {
+        width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+}
+
+@media all and (max-width: 599px){
+
+
+    #marca{
+        width: 300px;
+    }
+    header {
+        width: 580px;
+        height: 420px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .anchoregular {
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+}
