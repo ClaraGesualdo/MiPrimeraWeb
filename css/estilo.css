@@ -177,6 +177,22 @@ footer {
     margin-bottom: 0;
 }
 
+footer a:active {
+    color: rgb(255, 255, 255);
+}
+
+footer a:visited {
+    color: rgb(243, 239, 52);
+}
+
+footer a:link {
+    color: rgb(209, 106, 3);
+}
+
+footer a:hover {
+    color: rgb(254, 246, 0);
+}
+
 #datos {
     width:500px;
     float:left;
@@ -233,7 +249,7 @@ footer {
 #taller {
     width: 320px;
     height: 445px;
-    background-color: rgb(250, 246, 43);
+    background-color: rgb(225, 225, 225);
     float: left;
 }
 
